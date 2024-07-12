@@ -5,17 +5,21 @@ import Formulario from './componentes/Formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 
 function App() {
-  const {mostrarFormulario, actualizarMostrar} = useState(true)
+  const [mostrarFormulario, actualizarMostrar] = useState(true)
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //?=entonces | :=sino
 
+  const cambiarMostrar = () => {
+    actualizarMostrar(!mostrarFormulario)
+  }
+
   return (
     <div>
       <Header />
-      {mostrarFormulario === true ? <Formulario /> : <div></div>}
+      {mostrarFormulario ? <Formulario /> : <></>}
       
-      <MiOrg />
+      <MiOrg cambiarMostrar={cambiarMostrar}/>
     </div>
   );
 }
