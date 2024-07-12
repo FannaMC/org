@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import Header from "./componentes/Header/Header"
-console.log(Header)
+import Formulario from './componentes/Formulario/Formulario';
+import MiOrg from './componentes/MiOrg';
 
 function App() {
+  const {mostrarFormulario, actualizarMostrar} = useState(true)
+
+  //Ternario --> condicion ? seMuestra : noSeMuestra
+  //?=entonces | :=sino
+
   return (
-    <div className="App">
+    <div>
       <Header />
+      {mostrarFormulario === true ? <Formulario /> : <div></div>}
       
+      <MiOrg />
     </div>
   );
 }
