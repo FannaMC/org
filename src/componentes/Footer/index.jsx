@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
         </div>
         <img src="/img/Logo.png" alt="org" />
-        <strong>Desarrollado por Estefania Muñoz</strong>
+        <strong className="desarrollado">Desarrollado por Estefania</strong>
     </footer>
 }
 

@@ -1,17 +1,28 @@
 .footer {
     width: 100%;
     display: flex;
-    padding: 5%;
+    padding: 4%;
     align-items: center;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
     font-family: 'Monserrat', sans-serif;
     font-size: 20px;
 }
 
+.redes {
+    padding: 0% 4%;
+}
+
 .redes img {
+    width: 25px;
     padding: 0px 15px;
+
+}
+
+.desarrollado {
+    padding: 0% 3% 0% 0%;
 }
